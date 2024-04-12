@@ -36,4 +36,8 @@ in app/main.py
 Take note of settings: Settings = Depends(get_settings). Here, the Depends function is a dependency that declares another dependency, get_settings. 
 Put another way, Depends depends on the result of get_settings. 
 The value returned, Settings, is then assigned to the settings parameter.
+Rather than having to go through the trouble of spinning up a task queue (like Celery or RQ) or utilizing threads, 
+FastAPI makes it easy to deliver routes asynchronously. 
+As long as you don't have any blocking I/O calls in the handler, simply declare the handler as asynchronous
+
 
