@@ -27,7 +27,10 @@ Create a new project and install FastAPI along with Uvicorn, an ASGI server used
     $ rm project
     $ poetry add fastapi 
     $ poetry export -f requirements.txt --output requirements.txt
-
+    $ chmod +x project/entrypoint.sh
+    $ docker-compose up -d --build
+    $ docker-compose logs web
+    
 OUTPUT:
 
     (env) [ ahost ~/Work/fastapi-tdd-docker/project ]$ poetry add fastapi
