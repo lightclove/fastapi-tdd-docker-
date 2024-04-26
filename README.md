@@ -14,7 +14,6 @@ making it easy to manage, deploy, and scale web applications.
 
 ## Setup
 Create a new project and install FastAPI along with Uvicorn, an ASGI server used to serve up FastAPI:
-Создайте новый проект и установите FastAPI вместе с Uvicorn, сервером ASGI, используемым для обслуживания FastAPI:
 
     $ mkdir fastapi-tdd-docker && cd fastapi-tdd-docker
     $ mkdir project && cd project
@@ -27,6 +26,7 @@ Create a new project and install FastAPI along with Uvicorn, an ASGI server used
     $ mv * to subfolder
     $ rm project
     $ poetry add fastapi 
+    $ poetry export -f requirements.txt --output requirements.txt
 
 OUTPUT:
 
