@@ -55,3 +55,10 @@ The value returned, Settings, is then assigned to the settings parameter.
 Rather than having to go through the trouble of spinning up a task queue (like Celery or RQ) or utilizing threads, 
 FastAPI makes it easy to deliver routes asynchronously. 
 As long as you don't have any blocking I/O calls in the handler, simply declare the handler as asynchronous
+
+## Access the database via psql:
+  
+  $ docker-compose exec web-db psql -U postgres
+  $ postgres=# \c web_dev
+  $ postgres=# \q
+
